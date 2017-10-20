@@ -14,6 +14,15 @@ import * as RecipeActions from '../../recipes/store/recipe.actions';
 })
 export class HeaderComponent implements OnInit {
   authState: Observable<fromAuth.State>;
+  items: {title: string, icon: string}[] = [
+    {
+      title: 'home',
+      icon: 'home'
+    },
+    {
+      title: 'home',
+      icon: 'home'
+    }];
 
   constructor(private store: Store<fromApp.AppState>) {
   }
