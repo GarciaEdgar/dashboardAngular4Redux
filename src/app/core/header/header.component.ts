@@ -16,11 +16,15 @@ export class HeaderComponent implements OnInit {
   authState: Observable<fromAuth.State>;
   items: {title: string, icon: string}[] = [
     {
-      title: 'home',
+      title: 'Home',
       icon: 'home'
     },
     {
-      title: 'home',
+      title: 'Pacientes',
+      icon: 'home'
+    },
+    {
+      title: 'Calendario',
       icon: 'home'
     }];
 

@@ -1,3 +1,8 @@
-<sm-menu title="Secondary" class="secondary">
-  <a sm-item *ngFor="let item of items" [icon]="item.icon">{{item?.title}}</a>
+<sm-menu class="massive top fixed pointing menu">
+  <div class="ui container">
+    <a sm-item *ngFor="let item of items" >{{item?.title}}</a>
+    <div class="right menu">
+      <a sm-item>user menu</a>
+    </div>
+  </div>
 </sm-menu>
