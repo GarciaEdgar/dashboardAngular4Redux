@@ -5,6 +5,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
+
+import { NgSemanticModule } from 'ng-semantic';
 import { AuthInterceptor } from '../shared/auth.interceptor';
 import { LoggingInterceptor } from '../shared/logging.interceptor';
 
@@ -15,7 +17,8 @@ import { LoggingInterceptor } from '../shared/logging.interceptor';
   ],
   imports: [
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgSemanticModule
   ],
   exports: [
     AppRoutingModule,
