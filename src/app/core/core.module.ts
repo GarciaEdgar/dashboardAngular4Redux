@@ -6,9 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 
-import { NgSemanticModule } from 'ng-semantic';
 import { AuthInterceptor } from '../shared/auth.interceptor';
 import { LoggingInterceptor } from '../shared/logging.interceptor';
+import { SuiDropdownModule } from 'ng2-semantic-ui';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { LoggingInterceptor } from '../shared/logging.interceptor';
   imports: [
     SharedModule,
     AppRoutingModule,
-    NgSemanticModule
+    SuiDropdownModule
   ],
   exports: [
     AppRoutingModule,
